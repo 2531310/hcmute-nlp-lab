@@ -2,10 +2,8 @@
 import os
 import spacy
 from flask import Flask, request, jsonify, send_file
-from spacy.cli import download
 
 app = Flask(__name__)
-download("en_core_web_sm")
 
 # Load the spaCy model
 nlp = spacy.load("en_core_web_sm")
